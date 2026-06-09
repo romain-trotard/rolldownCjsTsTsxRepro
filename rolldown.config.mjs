@@ -6,5 +6,8 @@ export default defineConfig({
   output: {
     dir: 'lib',
     format: 'cjs',
+    cleanDir: true,
+    entryFileNames: '[name].cjs',
+    chunkFileNames: '[name]-[hash].cjs',
   },
 });
